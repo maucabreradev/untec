@@ -1,0 +1,18 @@
+# Build and temporary artifacts
+build/
+*.class
+
+# Eclipse user-specific files
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.loadpath
+.recommenders
+
+# External logs
+*.log
