@@ -34,7 +34,7 @@
                     ¡Hola, <c:out value="${sessionScope.usuarioLogueado.nombre}" />!
                 </h2>
                 <p class="text-muted mb-0">
-                    <i class="bi bi-mortarboard me-1"></i> <c:out value="${sessionScope.usuarioLogueado.carrera}" /> &bull; 
+                    <i class="bi bi-mortarboard me-1"></i> <c:out value="${sessionScope.usuarioLogueado.carrera}" /> &bull;
                     <span class="badge ${sessionScope.usuarioLogueado.rol == 'ADMIN' ? 'bg-warning text-dark' : 'bg-primary'}">
                         <c:out value="${sessionScope.usuarioLogueado.rol}" />
                     </span>
@@ -164,13 +164,13 @@
                                             <td>
                                                 <c:choose>
                                                     <c:when test="${p.estado == 'ACTIVO'}">
-                                                        <span class="badge-estado badge-activo"><i class="bi bi-hourglass-split me-1"></i> Activo</span>
+                                                        <span class="badge-estado badge-activo">Activo</span>
                                                     </c:when>
                                                     <c:when test="${p.estado == 'DEVUELTO'}">
-                                                        <span class="badge-estado badge-devuelto"><i class="bi bi-check-all me-1"></i> Devuelto</span>
+                                                        <span class="badge-estado badge-devuelto">Devuelto</span>
                                                     </c:when>
                                                     <c:otherwise>
-                                                        <span class="badge-estado badge-vencido"><i class="bi bi-exclamation-circle me-1"></i> Vencido</span>
+                                                        <span class="badge-estado badge-vencido">Vencido</span>
                                                     </c:otherwise>
                                                 </c:choose>
                                             </td>

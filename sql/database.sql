@@ -9,6 +9,7 @@ CREATE DATABASE IF NOT EXISTS untec_biblioteca
   DEFAULT COLLATE utf8mb4_unicode_ci;
 
 USE untec_biblioteca;
+SET NAMES utf8mb4;
 
 -- Desactivar temporalmente chequeo de claves foráneas para recrear tablas
 SET FOREIGN_KEY_CHECKS = 0;
